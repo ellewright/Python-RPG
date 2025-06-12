@@ -1,8 +1,6 @@
 def battle(char_a, char_b):
     fight_over = False
 
-    print(f"Oh no, you have stumbled across a {char_b.name}! It has {char_b.health} health!")
-
     while not fight_over:
         char_a_attack = char_a.attack()
         char_b_attack = char_b.attack()

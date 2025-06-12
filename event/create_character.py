@@ -14,7 +14,7 @@ def create_character():
             paths = [Path.WARRIOR, Path.DRUID, Path.THIEF, Path.MAGE]
 
             player_confirmed = True
-            player = Player(entered_name, paths[random.randint(0, len(paths))])
+            player = Player(entered_name, paths[random.randint(0, len(paths) - 1)])
             player_created = True
         elif confirmed == "n":
             print("Whoops, sorry!")

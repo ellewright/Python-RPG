@@ -12,6 +12,8 @@ def main():
     monster = create_monster()
 
     # First fight
+    print(f"Oh no, you have stumbled across a {monster.name}! It has {monster.health} health!")
+    
     battle(player, monster)
 
 if __name__ == "__main__":
